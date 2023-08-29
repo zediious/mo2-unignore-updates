@@ -6,7 +6,7 @@ If you have done this to a lot of mods, this can help you quickly fix that up.
 
 ## Instructions to run
 
-1) Download Python https://www.python.org/downloads/
+1) Download Python ([https://www.python.org/downloads/]
 
 2) Download the [LATEST RELEASE](https://github.com/zediious/mo2-unignore-updates/releases) and place the `.py` file inside your Mod Organizer 2 `mods` directory.
 
