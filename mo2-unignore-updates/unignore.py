@@ -24,7 +24,7 @@ with open('mo2-unignore.log', 'w') as log_file:
         file_data: str
         changed_file_data: str
         try:
-            with open('meta.ini', "r") as read_file:
+            with open('meta.ini', "r", encoding='UTF-8') as read_file:
                 file_data = read_file.read()
                 changed_file_data = sub(ignored_regex, 'ignoredVersion=', file_data)
         except FileNotFoundError:
