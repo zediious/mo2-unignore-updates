@@ -4,7 +4,7 @@ from re import compile, sub
 ignored_regex = compile('ignoredVersion=\S+')
 
 # Open the log file to write changes to as the script runs
-with open('mo2-unignore.log', 'w') as log_file:
+with open('mo2-unignore.log', 'w', encoding="utf-8") as log_file:
 
     log_file.write("List of mods that will no longer ignore updates;\n")
 
@@ -34,7 +34,7 @@ with open('mo2-unignore.log', 'w') as log_file:
         # Write changed data from memory to meta.ini file if the data changed
         if file_data != changed_file_data:
             try:
-                with open('meta.ini', 'w') as write_file:
+                with open('meta.ini', 'w', encoding="utf-8") as write_file:
                     write_file.write(changed_file_data)
                     # Log the changed mod
                     log_file.write(f"{str(mod_dir)}\n")
