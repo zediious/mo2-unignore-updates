@@ -1,10 +1,22 @@
 # Mod Organizer 2 - Un-ignore downloads
 
-This script will make all mods in a Mod Organizer list no longer ignore updates, after they have been told to do so via the context menu.
+This plugin will make all mods in a Mod Organizer list no longer ignore updates, after they have been told to do so via the context menu.
 
 If you have done this to a lot of mods, this can help you quickly fix that up.
 
-## Instructions to run
+This exists as a Mod Organizer 2 plugin.
+
+1) Download the [latest release](https://github.com/zediious/mo2-unignore-updates/releases).
+
+2) Extract `UnignoreModUpdates.py` to the `plugins` directory in your Mod Organizer 2 instance. Restart Mod Organizer if it is not already closed.
+
+3) Use the "Unignore Mod Updates" option under the puzzle piece icon at the top panel in Mod Organizer.
+
+4) Any mods who have had their updates ignored will no longer ignore them. You may need to press F5 to refresh Mod Organizer to see this..
+
+The standalone script is to be placed directly in your `mods` directory and ran by command line. It will print a log of unignored mods. An optional script exists to only list the mods, without making the changes.
+
+## Instructions to run the standalone scripts
 
 1) Download Python ([https://www.python.org/downloads/]
 

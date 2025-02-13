@@ -1,0 +1,11 @@
+name: mo2-unignore-updates
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  - pip:
+    - mobase-stubs
+    - PyQt6
+    - black
+    - flake8-black
